@@ -40,8 +40,9 @@ fun imprimirCaracteresMensaje2(edad: Int){
             a-=1
             print('-')
             a-=1
-            println()
+
         }
+        println()
     }
 }
 fun imprimirMensaje2(edad: Int, mensaje:String){
@@ -64,6 +65,9 @@ fun main() {
     try {capas= readLine()!!.toInt()}catch (_:Exception){"Las capas solo pueden ser un numero"}
     println("Dime que mensajes deseas imprimir")
     mensaje= readLine()!!
+    imprimirCaracteresMensaje2(edad)
+    imprimirMensaje2(edad, mensaje)
+    imprimirCaracteresMensaje2(edad)
     imprimirVelas2(edad)
     imprimirCapaSup2(edad)
     imprimirCapasInf2(edad,capas)

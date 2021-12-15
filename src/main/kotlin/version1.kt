@@ -25,8 +25,9 @@ fun imprimirCaracteresMensaje(edad: Int) {
         a -= 1
         print('-')
         a -= 1
-        println()
+
     }
+    println()
 }
 
 fun imprimirMensaje(edad: Int, mensaje: String) {
@@ -41,6 +42,9 @@ fun main() {
     var mensaje = ""
     println("Dime que mensajes deseas imprimir")
     mensaje = readLine()!!
+    imprimirCaracteresMensaje(edad)
+    imprimirMensaje(edad, mensaje)
+    imprimirCaracteresMensaje(edad)
     imprimirVelas(edad)
     imprimirCapaSup(edad)
     imprimirCapasInf(edad, capas)
